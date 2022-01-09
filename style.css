@@ -179,3 +179,22 @@ width:19.9ch;
 width:20ch 
 }
 }
+#byee{
+width:0ch;
+overflow:hidden;
+border-right: solid 3px rgba(0,255,0,.75);
+white-space:nowrap;
+animation:text 5s infinite steps(180000);
+}
+
+@keyframes text{
+0%{
+width:0ch;				
+}
+35%{
+width:19.9ch;
+}
+50%{
+width:20ch 
+}
+}
