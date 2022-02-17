@@ -1,12 +1,15 @@
 html{
 scroll-behavior:smooth;
 }
+body{
+overflow-y:scroll;
+overflow-x:hidden;
+}
 #bodo{
 border-bottom:5px solid #0d6efd;
 }
 #mt{
 margin-top:3rem ;
-height:95vh;
 }
 .card{
 box-shadow:10px 10px 10px #fff;
@@ -176,7 +179,7 @@ width:0ch;
 overflow:hidden;
 border-right: solid 3px #00ff00;
 white-space:nowrap;
-animation:text 4s infinite steps(2500000000);
+animation:text 4s infinite steps(2500000000),animated-cursor 600ms steps(29,end) infinite;;
 }
 
 @keyframes text{
@@ -193,6 +196,8 @@ width:20ch;
 width:20.1ch 
 }
 }
+
+@keyframes animated-cursor{ from{border-right-color: #00ff00;} to{border-right-color: transparent;} }
 #byee{
 border-right: solid 3px #00ff00;
 white-space:nowrap;
@@ -200,8 +205,10 @@ white-space:nowrap;
 }
 
 
-.nev-link:hover{
-color:#fff;
+#nev-link:hover{
+background:#fff;
+color:#0044ff;
+border-radius:10px;
 box-shadow:3px 3px 60px 5px #fff;
 }
 
@@ -209,7 +216,6 @@ box-shadow:3px 3px 60px 5px #fff;
 animation:float 4s ease-in-out infinite;
 border:5px solid #0044ff;
 border-radius:1000px;
--webkit-box-reflect: below 55px;
 }
 @keyframes float{
 0%{
@@ -226,6 +232,8 @@ border-radius:1000px;
 #send{
 box-shadow:0px 0 5px 5px #0044ff;
 border-radius:40px;
+padding-left:5px;
+padding-right:5px;
 }
 #navbarSupportedContent{
 transition: 0.5s ;
@@ -246,11 +254,12 @@ transition: 0.5s ;
  	border-right: solid 7px #c5c5c5;
  	border-bottom: solid 7px #c5c5c5;
  	width:80%;
+ 	height:400px;
  }
 }
 @media screen and (min-width: 480px) {
  #mypi{
- 	margin-top:1rem; 
+ 	padding-top:5rem; 
  } 	
 }
 @media screen and (min-width: 480px) {
@@ -273,4 +282,20 @@ transition: 0.5s ;
  	width:90%;
 }
 }
-body::-webkit-scrollbar { width: 10px; /* width of the entire scrollbar */ } body::-webkit-scrollbar-track { background:white; /* color of the tracking area */ } body::-webkit-scrollbar-thumb { background-image:linear-gradient(blue,cyan); /* color of the scroll thumb */ border-radius:0px; /* roundness of the scroll thumb */ border:1px solid white; /* creates padding around scroll thumb */ }
+
+
+@media screen and (min-width: 480px) {
+ #boxo{
+ margin-top:0; 
+}
+}
+body::-webkit-scrollbar { width: 15px; /* width of the entire scrollbar */ } body::-webkit-scrollbar-track { background:#000; /* color of the tracking area */ } body::-webkit-scrollbar-thumb { background:#fff; /* color of the scroll thumb */ border-radius:50px; /* roundness of the scroll thumb */ border:1px solid white; /* creates padding around scroll thumb */ }
+
+
+@media screen and (min-width: 480px) {
+
+ #dev_main{
+margin-top:3rem;
+}
+}
+
